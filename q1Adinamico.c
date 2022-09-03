@@ -4,9 +4,9 @@
 int main(){
   int *vet, i,tam;
   
-  printf("Digite o tamanho do vetor: ");
+  printf("Digite o tamanho do vetor: "); // aqui sera definido o tamanho do vetor pelo usuario.
   scanf("%d",&tam);
-  vet = (int*)malloc(tam * sizeof(int));//armazeando o tamanho de inteiros no espaço alocado/
+  vet = (int*)malloc(tam * sizeof(int));// criação do vetor, e armazenando o tamanho de inteiros no espaço alocado/
 
   if(vet == NULL){
     printf("Memoria insuficiente.\n");
@@ -16,7 +16,7 @@ int main(){
    int soma = 0;
    for(i = 0 ; i < tam; i++){
        printf("Informe um valor na posicao[%d]: ", i+1);
-       scanf("%d", &vet[i]);
+       scanf("%d", &vet[i]);// aqui sera realizado a leitura de dado, para realizacão  da comparação com maior e menor.
      soma = soma + vet[i];
    }
    int maior = vet[0];
